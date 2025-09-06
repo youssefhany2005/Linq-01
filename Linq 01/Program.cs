@@ -7,7 +7,7 @@ namespace Linq_01
     {
         static void Main(string[] args)
         {
-            #region Restriction Operators
+            #region [1] Restriction Operators
 
             #region 1. Find all products that are out of stock.
             //var ProductsOutOfStock = ProductsList.Where(p => p.UnitsInStock == 0);
@@ -38,7 +38,7 @@ namespace Linq_01
 
             #endregion
 
-            #region Tranforming Operators
+            #region [2] Tranforming Operators
             #region 1. Return a sequence of just the names of a list of products.
             //var ProductNames = ProductsList.Select(p => p.ProductName);
             //foreach (var name in ProductNames)
@@ -59,7 +59,7 @@ namespace Linq_01
             //    Console.WriteLine($"Uppercase: {word.UpperCase}, Lowercase: {word.LowerCase}");
             //}
             #endregion
-            
+
             #region 3. Produce a sequence containing some properties of Products, including UnitPrice which is renamed to Price in the resulting type.
             //var ProductProperties = ProductsList.Select(p => new
             //{
@@ -72,7 +72,7 @@ namespace Linq_01
             //    Console.WriteLine($"ProductID: {product.ProductID}, ProductName: {product.ProductName}, Price: {product.Price}");
             //}
             #endregion
-            
+
             #region 4. Determine if the value of int in an array matches their position in the array.
             //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             //var NumbersThatMatchTheirPosition = Arr.Select((number, index) => new
@@ -85,7 +85,7 @@ namespace Linq_01
             //    Console.WriteLine($"Number: {item.Number}, InPlace: {item.InPlace}");
             //}
             #endregion
-            
+
             #region 5. Returns all pairs of numbers from both arrays such that the number from numbersA is less than the number from numbersB.
             //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
             //int[] numbersB = { 1, 3, 5, 7, 8 };
@@ -98,7 +98,7 @@ namespace Linq_01
             //    Console.WriteLine($"A: {pair.a}, B: {pair.b}");
             //}
             #endregion
-            
+
             #region 6. Select all orders where the order total is less than 500.00.
             //var OrdersWithTotalLessThan500 = CustomersList.SelectMany(
             //         c => c.Orders,
@@ -109,12 +109,12 @@ namespace Linq_01
             //    Console.WriteLine($"CustomerID: {order.CustomerID}, OrderID: {order.OrderID}, Total: {order.Total}");
             //}
             #endregion
-            
+
             #region 7. Select all orders where the order was made in 1998 or later.
             #endregion
             #endregion
 
-            #region Ordering Operators
+            #region [3] Ordering Operators
 
             #region 1. Sort a list of products by name
             //var ProductsSortedByName = ProductsList.OrderBy(p => p.ProductName);
@@ -188,7 +188,7 @@ namespace Linq_01
             #endregion
             #endregion
 
-            #region Element Operators
+            #region [4] Element Operators
             #region 1. Get first Product out of Stock 
             //var FirstProductOutOfStock = ProductsList.FirstOrDefault(p => p.UnitsInStock == 0);
             //foreach (var product in ProductsList)
@@ -217,7 +217,7 @@ namespace Linq_01
             #endregion
             #endregion
 
-            #region Aggregate Operators
+            #region [5] Aggregate Operators
             #region 1. Uses Count to get the number of odd numbers in the array
             //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             //var NumberOfOddNumbers = Arr.Count(n => n % 2 != 0);
